@@ -51,10 +51,8 @@ class PatchTST(nn.Module):
 
         x = self.revin(x, mode='norm')
         patches = self._create_patches(x)
-        print("Patches shape:", patches.shape)
         # x: (batch_size, nvars, patch_num, patch_len)
         x = self.patch_embed(patches) + self.pos_embed
-        print("After embedding shape:", x.shape)
         # x: (batch_size, nvars, patch_num, d_model)
         # use the encoder for each variable independently
         x = x.permute(0, 2, 1, 3).reshape(-1, self.n_patches, x.shape[-1])
@@ -62,7 +60,6 @@ class PatchTST(nn.Module):
         # x: (batch_size * nvars, patch_num, d_model)
         x = x.reshape(-1, self.n_patches * x.shape[-1])
         x = self.head(x)
-        print("After prediction head shape:", x.shape)
         # x: (batch_size * nvars, forecast_horizon)
         x = x.reshape(batch_size, nvars, self.forecast_horizon)
         x = self.revin(x, mode='denorm')
