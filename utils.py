@@ -1,6 +1,7 @@
 import numpy as np
 import torch
 import torch.nn as nn
+from tqdm import tqdm
 
 
 def val(model, val_loader, criterion, device):
@@ -25,12 +26,16 @@ def val(model, val_loader, criterion, device):
 def train(model, train_loader, val_loader, criterion, epochs, optimizer, device):
     train_loss_arr = []
     val_loss_arr = []
+    
+    print("Starting training...")
 
     for epoch in range(epochs):
         model.train()
         running_loss = 0.0
+        
+        print(f"Epoch {epoch + 1}/{epochs}")
 
-        for inputs, labels in train_loader:
+        for inputs, labels in tqdm(train_loader):
             inputs, labels = inputs.to(device).float(), labels.to(device).float()
 
             optimizer.zero_grad()
