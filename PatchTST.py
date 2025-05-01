@@ -55,7 +55,7 @@ class PatchTST(nn.Module):
         x = self.patch_embed(patches) + self.pos_embed
         # x: (batch_size, nvars, patch_num, d_model)
         # use the encoder for each variable independently
-        x = x.permute(0, 2, 1, 3).reshape(-1, self.n_patches, x.shape[-1])
+        x = x.reshape(-1, self.n_patches, x.shape[-1])
         x = self.transformer(x)
         # x: (batch_size * nvars, patch_num, d_model)
         x = x.reshape(-1, self.n_patches * x.shape[-1])
