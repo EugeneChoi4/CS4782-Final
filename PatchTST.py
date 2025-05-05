@@ -67,7 +67,6 @@ class PatchTST(nn.Module):
 
     def _create_patches(self, x):
         """Split x into overlapping patches."""
-        batch_size, nvars, input_length = x.shape
         x = x.unfold(dimension=-1, size=self.patch_len, step=self.stride)
         return x
 
