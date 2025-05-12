@@ -3,7 +3,7 @@
 ## Introduction
 - **Purpose:** This repo re-implements supervised and self-supervised PatchTST, a state-of-the-art Transformer for long-term multivariate forecasting.  
 - **Paper:** "A Time Series Is Worth 64 Words: Long-Term Forecasting with Transformers" by Nie et al., which introduces **patching** and **channel-independence** to lower attention costs and improve accuracy.
-![image](https://github.com/user-attachments/assets/1b263bc3-e781-4647-9d13-803e96b170de)
+<img src="https://github.com/user-attachments/assets/1b263bc3-e781-4647-9d13-803e96b170de" width="60%">
 
 ## Chosen Result
 - **Targeted Reproduction:**
