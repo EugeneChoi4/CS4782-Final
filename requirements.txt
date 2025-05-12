@@ -1,0 +1,15 @@
+einops==0.8.1
+fbm==0.3.0
+matplotlib==3.10.3
+numpy==2.2.5
+pandas==2.2.3
+pmdarima==2.0.4
+ptflops==0.7.4
+pynvml==12.0.0
+scikit_learn==1.6.1
+scipy==1.15.3
+sympy==1.14.0
+sympy==1.13.1
+torch==2.5.1
+tqdm==4.66.5
+tvm==1.0.0
