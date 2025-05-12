@@ -76,8 +76,10 @@ Our re-implementation of PatchTST reinforced the effectiveness of patching and c
 ## References
 [1] Guokun Lai, Wei-Cheng Chang, Yiming Yang, and Hanxiao Liu. Modeling long- and short-
 term temporal patterns with deep neural networks, 2018.
+
 [2] Yuqi Nie, Nam H. Nguyen, Phanwadee Sinthong, and Jayant Kalagnanam. A time series is
 worth 64 words: Long-term forecasting with transformers, 2023.
+
 [3] Haoyi Zhou, Shanghang Zhang, Jieqi Peng, Shuai Zhang, Jianxin Li, Hui Xiong, and Wancai
 Zhang. Informer: Beyond efficient transformer for long sequence time-series forecasting. In
 The Thirty-Fifth AAAI Conference on Artificial Intelligence, AAAI 2021, Virtual Conference,
