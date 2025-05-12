@@ -6,8 +6,8 @@
 
 ## Chosen Result
 - **Targeted Reproduction:**
-  - **Table 3:** Supervised PatchTST on Electricity outperforms Informer and Autoformer  
-  - **Table 4:** Self-supervised PatchTST further boosts accuracy  
+  - **Table 3:** Supervised PatchTST on Electricity outperforms Informer, Pryaformer, and Autoformer  
+  - **Table 4:** Self-supervised PatchTST further boosts accuracy compared to supervised PatchTST 
   - **Table 5:** Transfer-learned PatchTST matches supervised performance in far fewer epochs  
 - **Significance:** Validates that patching + channel-independence shows improved long-horizon accuracy.
 
